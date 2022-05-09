@@ -1,0 +1,192 @@
+prefix: ['Probe', 'Dataset']
+
+scorers:
+  - id: 'VBERT-42-pt'
+    name: '1'
+  - id: 'VBERT-43-pt'
+    name: '2'
+  - id: 'VBERT-44-pt'
+    name: '3'
+  - id: 'VBERT-45-pt'
+    name: '4'
+  - id: 'VBERT-46-pt'
+    name: '5'
+  - special: 'stdev'
+    name: 'stdev'
+
+rows:
+  - raw: '\multicolumn{2}{l}{\bf TREC DL 2019} \\ \midrule'
+
+  - probe: 'CV-DL19-Len-Rel'
+    prefix: ['Relevance', 'Length']
+  - probe: 'CV-DL19-Tf-Rel'
+    prefix: ['', 'TF']
+  - probe: 'CV-DL19-Overlap-Rel'
+    prefix: ['', 'Overlap']
+  - raw: '\midrule'
+
+  - probe: 'CV-DL19-Rel-Len'
+    prefix: ['Length', 'Relevance']
+  - probe: 'CV-DL19-Tf-Len'
+    prefix: ['', 'TF']
+  - probe: 'CV-DL19-Overlap-Len'
+    prefix: ['', 'Overlap']
+  - raw: '\midrule'
+
+  - probe: 'CV-DL19-Rel-Tf'
+    prefix: ['TF', 'Relevance']
+  - probe: 'CV-DL19-Len-Tf'
+    prefix: ['', 'Length']
+  - probe: 'CV-DL19-Overlap-Tf'
+    prefix: ['', 'Overlap']
+  - raw: '\midrule'
+
+  - probe: 'CV-DL19-Rel-Overlap'
+    prefix: ['Overlap', 'Relevance']
+  - probe: 'CV-DL19-Len-Overlap'
+    prefix: ['', 'Length']
+  - probe: 'CV-DL19-Tf-Overlap'
+    prefix: ['', 'TF']
+
+  - raw: '\midrule\multicolumn{2}{l}{\bf ANTIQUE} \\ \midrule'
+  - probe: 'CV-ANT-Len-Rel'
+    prefix: ['Relevance', 'Length']
+  - probe: 'CV-ANT-Tf-Rel'
+    prefix: ['', 'TF']
+  - probe: 'CV-ANT-Overlap-Rel'
+    prefix: ['', 'Overlap']
+  - raw: '\midrule'
+
+  - probe: 'CV-ANT-Rel-Len'
+    prefix: ['Length', 'Relevance']
+  - probe: 'CV-ANT-Tf-Len'
+    prefix: ['', 'TF']
+  - probe: 'CV-ANT-Overlap-Len'
+    prefix: ['', 'Overlap']
+  - raw: '\midrule'
+
+  - probe: 'CV-ANT-Rel-Tf'
+    prefix: ['TF', 'Relevance']
+  - probe: 'CV-ANT-Len-Tf'
+    prefix: ['', 'Length']
+  - probe: 'CV-ANT-Overlap-Tf'
+    prefix: ['', 'Overlap']
+  - raw: '\midrule'
+
+    prefix: ['', 'Overlap']
+  - probe: 'CV-ANT-Rel-Overlap'
+    prefix: ['Overlap', 'Relevance']
+  - probe: 'CV-ANT-Len-Overlap'
+    prefix: ['', 'Length']
+  - probe: 'CV-ANT-Tf-Overlap'
+    prefix: ['', 'TF']
+
+
+  - probe: 'TR-DL19-DelStops-DelPunct'
+    negate: YES
+    prefix: ['Rem. Stops/Punct', 'DL19']
+  - probe: 'TR-ANT-DelStops-DelPunct'
+    negate: YES
+    prefix: ['', 'ANT']
+  - raw: '\midrule'
+  - probe: 'TR-DL19-Lemma'
+    negate: YES
+    prefix: ['Lemmatize', 'DL19']
+  - probe: 'TR-ANT-Lemma'
+    negate: YES
+    prefix: ['', 'ANT']
+  - raw: '\midrule'
+  - probe: 'TR-DL19-ShufWords'
+    negate: YES
+    prefix: ['Shuf. Words', 'DL19']
+  - probe: 'TR-ANT-ShufWords'
+    negate: YES
+    prefix: ['', 'ANT']
+  - raw: '\midrule'
+  - probe: 'TR-DL19-ShufSents'
+    negate: YES
+    prefix: ['Shuf. Sents.', 'DL19']
+  - probe: 'TR-ANT-ShufSents'
+    negate: YES
+    prefix: ['', 'ANT']
+  - raw: '\midrule'
+  - probe: 'TR-DL19-ShufPrepositions'
+    negate: YES
+    prefix: ['Shuf. Prepositions', 'DL19']
+  - probe: 'TR-ANT-ShufPrepositions'
+    negate: YES
+    prefix: ['', 'ANT']
+  - raw: '\midrule'
+  - probe: 'TR-DL19-Typo-nostops'
+    negate: YES
+    prefix: ['Typos', 'DL19']
+  - probe: 'TR-ANT-Typo-nostops'
+    negate: YES
+    prefix: ['', 'ANT']
+  - raw: '\midrule'
+  # - probe: 'TR-DL19-Query'
+  #   negate: YES
+  #   prefix: ['Replace w/ Query', 'DL19']
+  # - probe: 'TR-ANT-Query'
+  #   negate: YES
+  #   prefix: ['', 'ANT']
+  # - raw: '\midrule'
+  - probe: 'TR-DL19-DocTTTTTQuery'
+    negate: YES
+    prefix: ['+ DocT5Query', 'DL19']
+  - probe: 'TR-ANT-DocTTTTTQuery'
+    negate: YES
+    prefix: ['', 'ANT']
+  - raw: '\midrule'
+  - probe: 'TR-DL19-AddSent-end'
+    negate: YES
+    prefix: ['+ Non-Rel Sent.', 'DL19']
+  - probe: 'TR-ANT-AddSent1-end'
+    negate: YES
+    prefix: ['', 'ANT']
+
+
+
+
+  - probe: 'DS-Paraphrase-mspc'
+    prefix: ['Paraphrase', 'MSPC']
+    nosign: YES
+  - raw: '\midrule'
+  - probe: 'DS-Jfleg'
+    negate: YES
+    prefix: ['Fluency', 'JFLEG']
+  - probe: 'DS-Jfleg-sp'
+    negate: YES
+    prefix: ['', '(spellchecked)']
+  - raw: '\midrule'
+  - probe: 'DS-Gyafc'
+    prefix: ['Formality', 'GYAFC']
+  - probe: 'DS-Gyafc-enter'
+    prefix: ['', ' - entertain.']
+  - probe: 'DS-Gyafc-family'
+    prefix: ['', ' - family']
+  - raw: '\midrule'
+  - probe: 'DS-XSum'
+    prefix: ['Succinctness', 'XSum']
+  - probe: 'DS-CnnDmProbe-cnn'
+    prefix: ['', 'CNN']
+  - probe: 'DS-CnnDmProbe-dm'
+    prefix: ['', 'Daily Mail']
+  - raw: '\midrule'
+  - probe: 'DS-Simplification-wikiturk'
+    negate: YES
+    prefix: ['Simplicity', 'WikiTurk']
+  - raw: '\midrule'
+  - probe: 'DS-Bias'
+    prefix: ['Neutrality', 'WNC']
+  - raw: '\midrule'
+  - probe: 'DS-Factuality-nq-tertok-train-PERSON'
+    prefix: ['Factuality', 'NQ: PER']
+  - probe: 'DS-Factuality-nq-tertok-train-GPE'
+    prefix: ['', 'NQ: GPE']
+  - probe: 'DS-Factuality-nq-tertok-train-LOC'
+    prefix: ['', 'NQ: LOC']
+  - probe: 'DS-Factuality-nq-tertok-train-NORP'
+    prefix: ['', 'NQ: NORP']
+  - probe: 'DS-Factuality-nq-tertok-train-ORG'
+    prefix: ['', 'NQ: ORG']

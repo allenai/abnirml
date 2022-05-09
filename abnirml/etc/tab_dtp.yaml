@@ -1,0 +1,69 @@
+prefix: ['Probe', 'Dataset']
+
+scorers:
+  - id: 'TerrierBM25-dl19'
+    name: 'BM25'
+  - id: 'WMD-pt'
+    name: 'WMD'
+  - id: 'SBERT-mnli-pt'
+    name: 'SBERT'
+  - id: 'S2'
+    name: 'LGBM'
+  - id: 'DocTTTTTQuery-TerrierBM25-dl19'
+    name: 'DT5Q'
+  - id: 'VBERT'
+    name: 'VBERT'
+  - id: 'EPIC-42-pt'
+    name: 'EPIC'
+  - id: 'T5-msmarco-pt'
+    name: 'T5-B'
+  - id: 'T5-msmarco-l-pt'
+    name: 'T5-L'
+  - id: 'ColBERT-pt'
+    name: 'ColBERT'
+  - id: 'ANCE-pt'
+    name: 'ANCE'
+
+rows:
+  - probe: 'DS-Paraphrase-mspc'
+    prefix: ['Paraphrase', 'MSPC']
+    nosign: YES
+  - raw: '\midrule'
+  - probe: 'DS-Jfleg'
+    negate: YES
+    prefix: ['Fluency', 'JFLEG']
+  - probe: 'DS-Jfleg-sp'
+    negate: YES
+    prefix: ['', '(spellchecked)']
+  - raw: '\midrule'
+  - probe: 'DS-Gyafc'
+    prefix: ['Formality', 'GYAFC']
+  - probe: 'DS-Gyafc-enter'
+    prefix: ['', ' - entertain.']
+  - probe: 'DS-Gyafc-family'
+    prefix: ['', ' - family']
+  - raw: '\midrule'
+  - probe: 'DS-Simplification-wikiturk'
+    negate: YES
+    prefix: ['Simplicity', 'WikiTurk']
+  - raw: '\midrule'
+  - probe: 'DS-Bias'
+    prefix: ['Neutrality', 'WNC']
+  - raw: '\midrule'
+  - probe: 'DS-XSum'
+    prefix: ['Succinctness', 'XSum']
+  - probe: 'DS-CnnDmProbe-cnn'
+    prefix: ['', 'CNN']
+  - probe: 'DS-CnnDmProbe-dm'
+    prefix: ['', 'Daily Mail']
+  - raw: '\midrule'
+  - probe: 'DS-Factuality-nq-tertok-train-PERSON'
+    prefix: ['Factuality', 'NQ: PER']
+  - probe: 'DS-Factuality-nq-tertok-train-GPE'
+    prefix: ['', 'NQ: GPE']
+  - probe: 'DS-Factuality-nq-tertok-train-LOC'
+    prefix: ['', 'NQ: LOC']
+  - probe: 'DS-Factuality-nq-tertok-train-NORP'
+    prefix: ['', 'NQ: NORP']
+  - probe: 'DS-Factuality-nq-tertok-train-ORG'
+    prefix: ['', 'NQ: ORG']

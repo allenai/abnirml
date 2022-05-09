@@ -1,0 +1,190 @@
+abnirml:gyafc:
+  docs:
+    instructions: 'You can get a copy of the GYAFC corpus by forwarding approval for Yahoo L6 corpus
+to Joel Tetreault <tetreaul@gmail.com>. To proceed, place the file here: {path}'
+    cache_path: 'GYAFC_Corpus.zip'
+
+
+abnirml:yahoo-l6:
+  docs1:
+    instructions: 'The Yahoo! Answers Comprehensive Questions and Answers (L6) dataset can be
+requested  here: <https://webscope.sandbox.yahoo.com/catalog.php?datatype=l>. To proceed, place part
+1 here: {path}'
+    cache_path: 'FullOct2007.xml.part1.gz'
+  docs2:
+    instructions: 'The Yahoo! Answers Comprehensive Questions and Answers (L6) dataset can be
+requested  here: <https://webscope.sandbox.yahoo.com/catalog.php?datatype=l>. To proceed, place part
+2 here: {path}'
+    cache_path: 'FullOct2007.xml.part2.gz'
+
+
+abnirml:jfleg:
+  dev/src:
+    url: 'https://raw.githubusercontent.com/keisks/jfleg/master/dev/dev.src'
+    expected_md5: 'd8b9c19bc39c483cf31802591b28483b'
+    cache_path: "dev.src"
+  dev/src.sp:
+    url: 'https://raw.githubusercontent.com/keisks/jfleg/master/dev/dev.spellchecked.src'
+    expected_md5: 'aa261d8615349006ce250dbc971eb9da'
+    cache_path: "dev.spellchecked.src"
+  test/src:
+    url: 'https://raw.githubusercontent.com/keisks/jfleg/master/test/test.src'
+    expected_md5: '42dc63f8d6cbabd2e7c7935fc8fce492'
+    cache_path: "test.src"
+  test/src.sp:
+    url: 'https://raw.githubusercontent.com/keisks/jfleg/master/test/test.spellchecked.src'
+    expected_md5: '4410fdc19e3a3c80dbf834e1522cc906'
+    cache_path: "test.spellchecked.src"
+  dev/ref0:
+    url: 'https://raw.githubusercontent.com/keisks/jfleg/master/dev/dev.ref0'
+    expected_md5: 'cc0b18052013856e911ea67d565413ef'
+    cache_path: "dev.ref0"
+  dev/ref1:
+    url: 'https://raw.githubusercontent.com/keisks/jfleg/master/dev/dev.ref1'
+    expected_md5: '1477d613f8ecf1eb60f1263a4535f16c'
+    cache_path: "dev.ref1"
+  dev/ref2:
+    url: 'https://raw.githubusercontent.com/keisks/jfleg/master/dev/dev.ref2'
+    expected_md5: '59631c5d0a4f89aa7e61e43b0f66ec12'
+    cache_path: "dev.ref2"
+  dev/ref3:
+    url: 'https://raw.githubusercontent.com/keisks/jfleg/master/dev/dev.ref3'
+    expected_md5: 'b0d70713754a2668a3054b8ec2026ef9'
+    cache_path: "dev.ref3"
+  test/ref0:
+    url: 'https://raw.githubusercontent.com/keisks/jfleg/master/test/test.ref0'
+    expected_md5: 'a2d618833a148ef69e2479ec341d486a'
+    cache_path: "test.ref0"
+  test/ref1:
+    url: 'https://raw.githubusercontent.com/keisks/jfleg/master/test/test.ref1'
+    expected_md5: 'bbcd5ccc74ada93da870b0ba30cf15b9'
+    cache_path: "test.ref1"
+  test/ref2:
+    url: 'https://raw.githubusercontent.com/keisks/jfleg/master/test/test.ref2'
+    expected_md5: 'd8fc715673836ba1241a2201a53a99d6'
+    cache_path: "test.ref2"
+  test/ref3:
+    url: 'https://raw.githubusercontent.com/keisks/jfleg/master/test/test.ref3'
+    expected_md5: 'c802e251c2a7ecf4bf8f41955baabf18'
+    cache_path: "test.ref3"
+
+abnirml:mspc:
+  sentences:
+    url: 'https://raw.githubusercontent.com/wasiahmad/paraphrase_identification/master/dataset/msr-paraphrase-corpus/msr_paraphrase_data.txt'
+    expected_md5: '26699543321462de4146ae6263aca6d7'
+    cache_path: 'sentences.tsv'
+  pairs/test:
+    url: 'https://raw.githubusercontent.com/wasiahmad/paraphrase_identification/master/dataset/msr-paraphrase-corpus/msr_paraphrase_test.txt'
+    expected_md5: '626a37bd08407ea80abccbeb4adeac85'
+    cache_path: 'pairs.test.tsv'
+  pairs/train:
+    url: 'https://raw.githubusercontent.com/wasiahmad/paraphrase_identification/master/dataset/msr-paraphrase-corpus/msr_paraphrase_train.txt'
+    expected_md5: '08fc0f011ec0c9cc9a260eac25bb0dc8'
+    cache_path: 'pairs.train.tsv'
+
+
+abnirml:wikiturk:
+  test.norm:
+    url: 'https://raw.githubusercontent.com/cocoxu/simplification/master/data/turkcorpus/test.8turkers.tok.norm'
+    expected_md5: '9027dad6ebe2f09a9a416c339ea82864'
+    cache_path: 'test.norm'
+  test.0:
+    url: 'https://raw.githubusercontent.com/cocoxu/simplification/master/data/turkcorpus/test.8turkers.tok.turk.0'
+    expected_md5: 'c52a03a08781a7a7a7f890cc92afd17b'
+    cache_path: 'test.0'
+  test.1:
+    url: 'https://raw.githubusercontent.com/cocoxu/simplification/master/data/turkcorpus/test.8turkers.tok.turk.1'
+    expected_md5: '06d2b8bd0dc183b389e532251d611726'
+    cache_path: 'test.1'
+  test.2:
+    url: 'https://raw.githubusercontent.com/cocoxu/simplification/master/data/turkcorpus/test.8turkers.tok.turk.2'
+    expected_md5: '8a08947a31921c24076326f057894a15'
+    cache_path: 'test.2'
+  test.3:
+    url: 'https://raw.githubusercontent.com/cocoxu/simplification/master/data/turkcorpus/test.8turkers.tok.turk.3'
+    expected_md5: 'cfe1f8fb42002e8e269b328895dafb43'
+    cache_path: 'test.3'
+  test.4:
+    url: 'https://raw.githubusercontent.com/cocoxu/simplification/master/data/turkcorpus/test.8turkers.tok.turk.4'
+    expected_md5: '5fea695b254322e624de356e31b51d4e'
+    cache_path: 'test.4'
+  test.5:
+    url: 'https://raw.githubusercontent.com/cocoxu/simplification/master/data/turkcorpus/test.8turkers.tok.turk.5'
+    expected_md5: 'd136c0546f452280f97cd314a2a74e4b'
+    cache_path: 'test.5'
+  test.6:
+    url: 'https://raw.githubusercontent.com/cocoxu/simplification/master/data/turkcorpus/test.8turkers.tok.turk.6'
+    expected_md5: '1677d34b3bd26447d3ce3672e0992b1c'
+    cache_path: 'test.6'
+  test.7:
+    url: 'https://raw.githubusercontent.com/cocoxu/simplification/master/data/turkcorpus/test.8turkers.tok.turk.7'
+    expected_md5: '40874852bb9de40f650483ea3fa266c4'
+    cache_path: 'test.7'
+  tune.norm:
+    url: 'https://raw.githubusercontent.com/cocoxu/simplification/master/data/turkcorpus/tune.8turkers.tok.norm'
+    expected_md5: '4ed2dd7e585d8eef9ad49cea0584ce1d'
+    cache_path: 'tune.norm'
+  tune.0:
+    url: 'https://raw.githubusercontent.com/cocoxu/simplification/master/data/turkcorpus/tune.8turkers.tok.turk.0'
+    expected_md5: '8371ac550462fc6207864ee9f55c24b7'
+    cache_path: 'tune.0'
+  tune.1:
+    url: 'https://raw.githubusercontent.com/cocoxu/simplification/master/data/turkcorpus/tune.8turkers.tok.turk.1'
+    expected_md5: '51ee886b6b9efba6b9a502e0315bd067'
+    cache_path: 'tune.1'
+  tune.2:
+    url: 'https://raw.githubusercontent.com/cocoxu/simplification/master/data/turkcorpus/tune.8turkers.tok.turk.2'
+    expected_md5: '895ca8712adbcbdf8c08bfc915b9f465'
+    cache_path: 'tune.2'
+  tune.3:
+    url: 'https://raw.githubusercontent.com/cocoxu/simplification/master/data/turkcorpus/tune.8turkers.tok.turk.3'
+    expected_md5: '4d0be4147156bc795f691131c50e7501'
+    cache_path: 'tune.3'
+  tune.4:
+    url: 'https://raw.githubusercontent.com/cocoxu/simplification/master/data/turkcorpus/tune.8turkers.tok.turk.4'
+    expected_md5: '4fef3eadf19002172926e3e1f83db4ba'
+    cache_path: 'tune.4'
+  tune.5:
+    url: 'https://raw.githubusercontent.com/cocoxu/simplification/master/data/turkcorpus/tune.8turkers.tok.turk.5'
+    expected_md5: '76225c95a8d4efbbe184624451b036b4'
+    cache_path: 'tune.5'
+  tune.6:
+    url: 'https://raw.githubusercontent.com/cocoxu/simplification/master/data/turkcorpus/tune.8turkers.tok.turk.6'
+    expected_md5: '0e21842ee75543df43efb3a41f0b76ec'
+    cache_path: 'tune.6'
+  tune.7:
+    url: 'https://raw.githubusercontent.com/cocoxu/simplification/master/data/turkcorpus/tune.8turkers.tok.turk.7'
+    expected_md5: 'f44861d25c522c3aed0a4adf669b9244'
+    cache_path: 'tune.7'
+
+
+abnirml:nbias:
+  docs:
+    url: 'https://nlp.stanford.edu/projects/bias/bias_data.zip'
+    expected_md5: '6db9e017ed6c3437af7ab20b20a51722'
+    cache_path: 'bias_data.zip'
+
+
+abnirml:xsum:
+  docs:
+    url: 'http://bollin.inf.ed.ac.uk/public/direct/XSUM-EMNLP18-Summary-Data-Original.tar.gz'
+    expected_md5: 'd549e65ee63825e784fa74668ac8c1ff'
+    cache_path: 'XSUM-EMNLP18-Summary-Data-Original.tar.gz'
+
+abnirml:cnn_dailymail:
+  cnn_stories:
+    url: 'https://drive.google.com/uc?export=download&id=0BwmD_VLjROrfTHk4NFg2SndKcjQ'
+    expected_md5: '85ac23a1926a831e8f46a6b8eaf57263'
+    cache_path: 'cnn_stories.tgz'
+  dailymail_stories:
+    url: 'https://drive.google.com/uc?export=download&id=0BwmD_VLjROrfM1BxdkxVaTY2bWs'
+    expected_md5: 'f9c5f565e8abe86c38bfa4ae8f96fd72'
+    cache_path: 'dailymail_stories.tgz'
+  cnn_titles:
+    url: 'https://macavaney.us/cnn_titles.tsv'
+    expected_md5: '21789ef064b08311b57477ef058cd369'
+    cache_path: 'cnn_titles.tsv'
+  dailymail_titles:
+    url: 'https://macavaney.us/dailymail_titles.tsv'
+    expected_md5: 'e2741e3a8fc114ab2e15e0150bee46d7'
+    cache_path: 'dailymail_titles.tsv'

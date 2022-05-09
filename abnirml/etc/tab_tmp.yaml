@@ -1,0 +1,89 @@
+prefix: ['Probe', 'Dataset']
+
+scorers:
+  - id: 'TerrierBM25-dl19'
+    name: 'BM25'
+  - id: 'WMD-pt'
+    name: 'WMD'
+  - id: 'SBERT-mnli-pt'
+    name: 'SBERT'
+  - id: 'S2'
+    name: 'LGBM'
+  - id: 'DocTTTTTQuery-TerrierBM25-dl19'
+    name: 'DT5Q'
+  - id: 'VBERT'
+    name: 'VBERT'
+  - id: 'EPIC-42-pt'
+    name: 'EPIC'
+  - id: 'T5-msmarco-pt'
+    name: 'T5-B'
+  - id: 'T5-msmarco-l-pt'
+    name: 'T5-L'
+  - id: 'ColBERT-pt'
+    name: 'ColBERT'
+  - id: 'ANCE-pt'
+    name: 'ANCE'
+
+rows:
+  - probe: 'TR-DL19-DelStops-DelPunct'
+    negate: YES
+    prefix: ['Rem. Stops/Punct', 'DL19']
+  - probe: 'TR-ANT-DelStops-DelPunct'
+    negate: YES
+    prefix: ['', 'ANT']
+  - raw: '\midrule'
+  - probe: 'TR-DL19-Lemma'
+    negate: YES
+    prefix: ['Lemmatize', 'DL19']
+  - probe: 'TR-ANT-Lemma'
+    negate: YES
+    prefix: ['', 'ANT']
+  - raw: '\midrule'
+  - probe: 'TR-DL19-ShufWords'
+    negate: YES
+    prefix: ['Shuf. Words', 'DL19']
+  - probe: 'TR-ANT-ShufWords'
+    negate: YES
+    prefix: ['', 'ANT']
+  - raw: '\midrule'
+  - probe: 'TR-DL19-ShufSents'
+    negate: YES
+    prefix: ['Shuf. Sents.', 'DL19']
+  - probe: 'TR-ANT-ShufSents'
+    negate: YES
+    prefix: ['', 'ANT']
+  - raw: '\midrule'
+  - probe: 'TR-DL19-ShufPrepositions'
+    negate: YES
+    prefix: ['Shuf. Prepositions', 'DL19']
+  - probe: 'TR-ANT-ShufPrepositions'
+    negate: YES
+    prefix: ['', 'ANT']
+  - raw: '\midrule'
+  - probe: 'TR-DL19-Typo-nostops'
+    negate: YES
+    prefix: ['Typos', 'DL19']
+  - probe: 'TR-ANT-Typo-nostops'
+    negate: YES
+    prefix: ['', 'ANT']
+  - raw: '\midrule'
+  # - probe: 'TR-DL19-Query'
+  #   negate: YES
+  #   prefix: ['Replace w/ Query', 'DL19']
+  # - probe: 'TR-ANT-Query'
+  #   negate: YES
+  #   prefix: ['', 'ANT']
+  # - raw: '\midrule'
+  - probe: 'TR-DL19-DocTTTTTQuery'
+    negate: YES
+    prefix: ['+ DocT5Query', 'DL19']
+  - probe: 'TR-ANT-DocTTTTTQuery'
+    negate: YES
+    prefix: ['', 'ANT']
+  - raw: '\midrule'
+  - probe: 'TR-DL19-AddSent-end'
+    negate: YES
+    prefix: ['+ Non-Rel Sent.', 'DL19']
+  - probe: 'TR-ANT-AddSent1-end'
+    negate: YES
+    prefix: ['', 'ANT']

@@ -1,0 +1,92 @@
+prefix: ['Variable', 'Control']
+
+scorers:
+  - id: 'TerrierBM25-dl19'
+    name: 'BM25'
+  - id: 'WMD-pt'
+    name: 'WMD'
+  - id: 'SBERT-mnli-pt'
+    name: 'SBERT'
+  - id: 'S2'
+    name: 'LGBM'
+  - id: 'DocTTTTTQuery-TerrierBM25-dl19'
+    name: 'DT5Q'
+  - id: 'VBERT'
+    name: 'VBERT'
+  - id: 'EPIC-42-pt'
+    name: 'EPIC'
+  - id: 'T5-msmarco-pt'
+    name: 'T5-B'
+  - id: 'T5-msmarco-l-pt'
+    name: 'T5-L'
+  - id: 'ColBERT-pt'
+    name: 'ColBERT'
+  - id: 'ANCE-pt'
+    name: 'ANCE'
+
+rows:
+  - raw: '\multicolumn{2}{l}{\bf TREC DL 2019} \\ \midrule'
+
+  - probe: 'CV-DL19-Len-Rel'
+    prefix: ['Relevance', 'Length']
+  - probe: 'CV-DL19-Tf-Rel'
+    prefix: ['', 'TF']
+  - probe: 'CV-DL19-Overlap-Rel'
+    prefix: ['', 'Overlap']
+  - raw: '\midrule'
+
+  - probe: 'CV-DL19-Rel-Len'
+    prefix: ['Length', 'Relevance']
+  - probe: 'CV-DL19-Tf-Len'
+    prefix: ['', 'TF']
+  - probe: 'CV-DL19-Overlap-Len'
+    prefix: ['', 'Overlap']
+  - raw: '\midrule'
+
+  - probe: 'CV-DL19-Rel-Tf'
+    prefix: ['TF', 'Relevance']
+  - probe: 'CV-DL19-Len-Tf'
+    prefix: ['', 'Length']
+  - probe: 'CV-DL19-Overlap-Tf'
+    prefix: ['', 'Overlap']
+  - raw: '\midrule'
+
+  - probe: 'CV-DL19-Rel-Overlap'
+    prefix: ['Overlap', 'Relevance']
+  - probe: 'CV-DL19-Len-Overlap'
+    prefix: ['', 'Length']
+  - probe: 'CV-DL19-Tf-Overlap'
+    prefix: ['', 'TF']
+
+  - raw: '\midrule\multicolumn{2}{l}{\bf ANTIQUE} \\ \midrule'
+  - probe: 'CV-ANT-Len-Rel'
+    prefix: ['Relevance', 'Length']
+  - probe: 'CV-ANT-Tf-Rel'
+    prefix: ['', 'TF']
+  - probe: 'CV-ANT-Overlap-Rel'
+    prefix: ['', 'Overlap']
+  - raw: '\midrule'
+
+  - probe: 'CV-ANT-Rel-Len'
+    prefix: ['Length', 'Relevance']
+  - probe: 'CV-ANT-Tf-Len'
+    prefix: ['', 'TF']
+  - probe: 'CV-ANT-Overlap-Len'
+    prefix: ['', 'Overlap']
+  - raw: '\midrule'
+
+  - probe: 'CV-ANT-Rel-Tf'
+    prefix: ['TF', 'Relevance']
+  - probe: 'CV-ANT-Len-Tf'
+    prefix: ['', 'Length']
+  - probe: 'CV-ANT-Overlap-Tf'
+    prefix: ['', 'Overlap']
+  - raw: '\midrule'
+
+    prefix: ['', 'Overlap']
+  - probe: 'CV-ANT-Rel-Overlap'
+    prefix: ['Overlap', 'Relevance']
+  - probe: 'CV-ANT-Len-Overlap'
+    prefix: ['', 'Length']
+  - probe: 'CV-ANT-Tf-Overlap'
+    prefix: ['', 'TF']
