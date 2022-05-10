@@ -125,3 +125,15 @@ ProbeExperiment(scorer, probe, delta=0.0038296878337860107)  # delta based on me
 	'hash': 'f67b10889511af74699468d56f9309b2' # md5 hash of the samples from the probe (useful to verify that probes contain the exact same data across systems)
 }
 ```
+
+## Citing
+
+```
+@article{macavaney2022-abnirml,
+    author = {MacAvaney, Sean and Feldman, Sergey and Goharian, Nazli and Downey, Doug and Cohan, Arman},
+    title = "{ABNIRML: Analyzing the Behavior of Neural IR Models}",
+    journal = {Transactions of the Association for Computational Linguistics},
+    year = {2022},
+    url = {https://doi.org/10.1162/tacl\_a\_00457},
+}
+```
